@@ -24,5 +24,15 @@
 				Return all borrowed books by one member.
 			</action>
 		</release>
+
+		<release version="1.1" date="2018-09-06"
+			description="New boots & labels">
+			<action dev="deck" type="add">
+				New Validation Labels
+			</action>
+			<action dev="deck" type="update">
+				Spring Boot Upgrade
+			</action>
+		</release>
 	</body>
 </document>

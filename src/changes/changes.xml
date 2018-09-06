@@ -34,8 +34,15 @@
 				Spring Boot Upgrade
 			</action>
 		</release>
+			
 		<release version="1.2" date="2018-09-06"
-			description="New boots & labels">
+			description="Bücher mit Beschreibung">
+			<action dev="deck" type="add">
+				Ausgabe Version in der Anwendung
+			</action>
+			<action dev="deck" type="update">
+				Maven Version angepasst
+			</action>
 			<action dev="deck" type="add">
 				Bug-fix Fehlertext
 			</action>

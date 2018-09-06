@@ -48,7 +48,7 @@
 			</action>
 			<action dev="deck" type="update">
 				Ausgabe Version auf allen HTML-Seiten
-			</action
+			</action>
 			<action dev="deck" type="add">
 				Bug-fix Fehlertext
 			</action>

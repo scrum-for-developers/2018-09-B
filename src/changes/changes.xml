@@ -43,11 +43,14 @@
 
 		<release version="1.3" date="2018-09-06"
 			description="Eindeutige Bücher mit Beschreibung">
-			<action dev="deck" type="update">
+			<action dev="deck" type="add">
 				Ausgabe Version auf allen HTML-Seiten
 			</action>
 			<action dev="deck" type="update">
 				Spring Boot Upgrade
+			</action>
+			<action dev="deck" type="add">
+				Beschreibung der Buecher
 			</action>
 		</release>
 

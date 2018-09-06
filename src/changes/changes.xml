@@ -40,9 +40,15 @@
 			<action dev="deck" type="add">
 				Ausgabe Version in der Anwendung
 			</action>
+			<action dev="deck" type="add">
+				Attribut "description" beim Buch hinzugefuegt (backend).
+			</action>
 			<action dev="deck" type="update">
 				Maven Version angepasst
 			</action>
+			<action dev="deck" type="update">
+				Ausgabe Version auf allen HTML-Seiten
+			</action
 			<action dev="deck" type="add">
 				Bug-fix Fehlertext
 			</action>

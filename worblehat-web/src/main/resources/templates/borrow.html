@@ -17,6 +17,9 @@
 		<hr />
 		<a th:href="@{/}">Back to Home</a>
 	</form>
+	<h4 id="maven_version">
+		<span th:text="${@environment.getProperty('info.version')}"></span>
+	</h4>
 
 
 </body>

@@ -21,37 +21,36 @@
 		<release version="1.0" date="2011-04-06"
 			description="Release with much improved functionality">
 			<action dev="betaworblers" type="update">
-				Return all borrowed books by one member.
+				Return all borrowed books by
+				one member.
 			</action>
 		</release>
 
-		<release version="1.1" date="2018-09-06"
-			description="New boots and labels">
+		<release version="1.1" date="2018-09-06" description="New boots and labels">
 			<action dev="deck" type="add">
 				New Validation Labels
 			</action>
-			<action dev="deck" type="update">
-				Spring Boot Upgrade
-			</action>
 		</release>
-			
-		<release version="1.2" date="2018-09-06"
-			description="Bücher mit Beschreibung">
+
+		<release version="1.2" date="2018-09-06" description="Bücher mit Beschreibung">
 			<action dev="deck" type="add">
 				Ausgabe Version in der Anwendung
-			</action>
-			<action dev="deck" type="add">
-				Attribut "description" beim Buch hinzugefuegt (backend).
-			</action>
-			<action dev="deck" type="update">
-				Maven Version angepasst
-			</action>
-			<action dev="deck" type="update">
-				Ausgabe Version auf allen HTML-Seiten
 			</action>
 			<action dev="deck" type="add">
 				Bug-fix Fehlertext
 			</action>
 		</release>
+
+		<release version="1.3" date="2018-09-06"
+			description="Eindeutige Bücher mit Beschreibung">
+			<action dev="deck" type="update">
+				Ausgabe Version auf allen HTML-Seiten
+			</action>
+			<action dev="deck" type="update">
+				Spring Boot Upgrade
+			</action>
+
+		</release>
+
 	</body>
 </document>

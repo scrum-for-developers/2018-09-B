@@ -34,7 +34,7 @@
 				Spring Boot Upgrade
 			</action>
 		</release>
-		
+			
 		<release version="1.2" date="2018-09-06"
 			description="Bücher mit Beschreibung">
 			<action dev="deck" type="add">
@@ -48,8 +48,10 @@
 			</action>
 			<action dev="deck" type="update">
 				Ausgabe Version auf allen HTML-Seiten
+			</action
+			<action dev="deck" type="add">
+				Bug-fix Fehlertext
 			</action>
-			
 		</release>
 	</body>
 </document>

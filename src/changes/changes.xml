@@ -49,7 +49,6 @@
 			<action dev="deck" type="update">
 				Spring Boot Upgrade
 			</action>
-
 		</release>
 
 	</body>

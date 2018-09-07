@@ -8,16 +8,19 @@ public class HtmlBook {
     private String isbn;
     private String yearOfPublication;
     private String borrower;
+    private String description;
+    
     public HtmlBook() {
-        title = author = edition = isbn = yearOfPublication = borrower = "";
+        title = author = edition = isbn = yearOfPublication = borrower = description = "";
     }
-    public HtmlBook(String title, String author, String yearOfPublication, String edition, String isbn, String borrower) {
+    public HtmlBook(String title, String author, String yearOfPublication, String edition, String isbn, String borrower, String description) {
         this.title = title;
         this.author = author;
         this.edition = edition;
         this.isbn = isbn;
         this.yearOfPublication = yearOfPublication;
         this.borrower = borrower;
+        this.description = description;
     }
 
     public String getTitle() {
@@ -66,5 +69,11 @@ public class HtmlBook {
 
 	public void setBorrower(String borrower) {
 		this.borrower = borrower;
+	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
 	}
 }

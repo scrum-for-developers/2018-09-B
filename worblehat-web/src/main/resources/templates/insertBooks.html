@@ -6,22 +6,22 @@
 	<h1>Add Book</h1>
 
 	<form th:object="${bookDataFormData}" method="POST">
-			Title:<input type="text" th:field="*{title}" />
+			Title:<input type="text" th:field="*{title}"  maxlength="255"/>
 		<span class="error" th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></span>
 		<br />
-			Edition:<input type="text" th:field="*{edition}" />
+			Edition:<input type="text" th:field="*{edition}"  maxlength="255"/>
 		<span class="error" th:if="${#fields.hasErrors('edition')}" th:errors="*{edition}"></span>
 		<br />
-			ISBN:<input type="text" th:field="*{isbn}" />
+			ISBN:<input type="text" th:field="*{isbn}" maxlength="20"/>
 		<span class="error" th:if="${#fields.hasErrors('isbn')}" th:errors="*{isbn}"></span>
 		<br />
-			Author:<input type="text" th:field="*{author}" />
+			Author:<input type="text" th:field="*{author}"  maxlength="255"/>
 		<span class="error" th:if="${#fields.hasErrors('author')}" th:errors="*{author}"></span>
 		<br />
-			Year:<input type="text" th:field="*{yearOfPublication}" />
+			Year:<input type="text" th:field="*{yearOfPublication}" maxlength="4"/>
 		<span class="error" th:if="${#fields.hasErrors('yearOfPublication')}" th:errors="*{yearOfPublication}"></span>
 		<br />
-			Description:<input type="text" th:field="*{description}" />
+			Description:<textarea rows="20" cols="200" th:field="*{description}" type="text" maxlength="4000"/>
 		<span class="error" th:if="${#fields.hasErrors('description')}" th:errors="*{description}"></span>
 		<br />
 		<input type="submit" id="addBook" value="Add Book" />

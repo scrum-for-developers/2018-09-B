@@ -144,6 +144,7 @@ public class StandardBookServiceTest {
 		assertThat(bookArgumentCaptor.getValue().getEdition(), is(aBook.getEdition()));
 		assertThat(bookArgumentCaptor.getValue().getIsbn(), is(aBook.getIsbn()));
 		assertThat(bookArgumentCaptor.getValue().getYearOfPublication(), is(aBook.getYearOfPublication()));
+		assertThat(bookArgumentCaptor.getValue().getDescription(), is(aBook.getDescription()));
 	}
 
 	@Test

@@ -25,7 +25,8 @@ public class Book implements Serializable {
 	// TODO: convert String to an ISBN class, that ensures a valid ISBN
 	private String isbn;
 	private int yearOfPublication;
-	
+
+	@Column(length = 4000)
 	private String description;
 
 	@OneToOne(mappedBy = "borrowedBook", orphanRemoval = true)
@@ -52,12 +53,8 @@ public class Book implements Serializable {
 	 * @param yearOfPublication
 	 *            the yearOfPublication
 	 */
-	public Book(@Nonnull String title,
-				@Nonnull String author,
-				@Nonnull String edition,
-				@Nonnull String isbn,
-				int yearOfPublication,
-				String description) {
+	public Book(@Nonnull String title, @Nonnull String author, @Nonnull String edition, @Nonnull String isbn,
+			int yearOfPublication, String description) {
 		super();
 		this.title = title;
 		this.author = author;
@@ -107,7 +104,7 @@ public class Book implements Serializable {
 		this.yearOfPublication = yearOfPublication;
 	}
 
-    public Borrowing getBorrowing() {
+	public Borrowing getBorrowing() {
 		return borrowing;
 	}
 
@@ -125,19 +122,14 @@ public class Book implements Serializable {
 
 	public void borrowNowByBorrower(String borrowerEmailAddress) {
 		if (borrowing == null) {
-            this.borrowing = new Borrowing(this, borrowerEmailAddress);
-        }
+			this.borrowing = new Borrowing(this, borrowerEmailAddress);
+		}
 	}
 
 	@Override
 	public String toString() {
-		return "Book{" +
-				"title='" + title + '\'' +
-				", author='" + author + '\'' +
-				", edition='" + edition + '\'' +
-				", isbn='" + isbn + '\'' +
-				", yearOfPublication=" + yearOfPublication +
-				", description=" + description +
-				'}';
+		return "Book{" + "title='" + title + '\'' + ", author='" + author + '\'' + ", edition='" + edition + '\''
+				+ ", isbn='" + isbn + '\'' + ", yearOfPublication=" + yearOfPublication + ", description=" + description
+				+ '}';
 	}
 }

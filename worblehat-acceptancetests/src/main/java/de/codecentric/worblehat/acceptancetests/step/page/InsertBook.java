@@ -38,14 +38,15 @@ public class InsertBook {
 
 	// TODO: write story that contains whitespaces in examples table
 
-	@When("a librarian adds a book with title $title, author $author, edition $edition, year $year and isbn $isbn")
+	@When("a librarian adds a book with title $title, author $author, edition $edition, year $year, isbn $isbn and description $description")
 	public void whenABookWithISBNisbnIsAdded(String title,
 											 String author,
 											 String edition,
 											 String year,
-											 String isbn) {
+											 String isbn,
+											 String description) {
 		seleniumAdapter.gotoPage(Page.INSERTBOOKS);
-		fillInsertBookForm(title, author, edition, isbn, year);
+		fillInsertBookForm(title, author, edition, isbn, year, description);
 		seleniumAdapter.clickOnPageElement(PageElement.ADDBOOKBUTTON);
 		context.putObject("LAST_INSERTED_BOOK", isbn);
 	}
@@ -66,12 +67,13 @@ public class InsertBook {
 
 
 	private void fillInsertBookForm(String title, String author, String edition, String isbn,
-			 String year) {
+			 String year, String description) {
 		seleniumAdapter.typeIntoField("title", title);
 		seleniumAdapter.typeIntoField("edition", edition);
 		seleniumAdapter.typeIntoField("isbn", isbn);
 		seleniumAdapter.typeIntoField("author", author);
 		seleniumAdapter.typeIntoField("yearOfPublication", year);
+		seleniumAdapter.typeIntoField("description", description);
 	}
 
 

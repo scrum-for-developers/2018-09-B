@@ -49,6 +49,10 @@
 			<action dev="deck" type="update">
 				Spring Boot Upgrade
 			</action>
+		</release>
+		
+		<release version="1.4" date="2018-09-07"
+			description="Bücher mit Beschreibung">
 			<action dev="deck" type="add">
 				Beschreibung der Buecher
 			</action>

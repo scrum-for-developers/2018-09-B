@@ -44,6 +44,12 @@ public class DemoBookFactory {
         return this;
     }
 
+    public DemoBookFactory withDescription(String description){
+        this.book.setDescription(description);
+        return this;
+    }
+
+
     public Book build(){
         return book;
     }
